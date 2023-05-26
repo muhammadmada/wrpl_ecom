@@ -1,0 +1,20 @@
+.foot{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    min-height: 12.5vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    margin: 1.5rem;
+    text-align: justify;
+    font-size: large;
+}

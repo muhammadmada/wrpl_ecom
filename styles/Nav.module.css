@@ -1,0 +1,35 @@
+.nav{
+    top: 0px;
+    height: 60px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position:relative;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    min-width: 200px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li{
+    margin: 5px .5rem;
+}
+
+.left{
+    position: absolute;
+    left: 20px;
+    right: auto;
+}
+
+.right{
+    position: absolute;
+    right: 20px;
+}

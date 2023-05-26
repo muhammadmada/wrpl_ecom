@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.head{
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: flex-start;
+    text-align: center;
+    width: 1920px;
+    min-height: max-content;
+}
+
+.body{
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: flex-start;
+    text-align: center;
+    width: 1920px;
+    height: 540px;
+}
+
+.inside{
+    background-color: inherit;
+    padding: 20px;
+    justify-content: flex-start;
+    text-align: center;
+    top: 20px;
+    margin: 10%;
+}
