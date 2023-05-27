@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_SUPABASE")
+}
+
+model cart {
+  cartId   BigInt  @id
+  userId   BigInt?
+  datetime String?
+}
+
+model cartDetails {
+  cartDetailsid BigInt  @id
+  cartId        BigInt?
+  storeId       BigInt?
+  productId     BigInt?
+  quantity      BigInt?
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model order {
+  orderID BigInt    @id
+  userID  BigInt?
+  amount  BigInt?
+  ship    String?
+  city    String?
+  phone   String?
+  date    DateTime? @db.Date
+  tax     BigInt?
+}
+
+model orderDetails {
+  orderDetailsID BigInt  @id @unique
+  orderId        BigInt?
+  productId      BigInt?
+  name           String?
+  price          BigInt?
+  SKU            String?
+  quantity       BigInt?
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model product {
+  productId   BigInt  @id
+  productSkU  String?
+  productName String?
+  price       BigInt?
+  weight      BigInt?
+  desc        String?
+  stock       BigInt?
+}
+
+model shipment {
+  shipmentID   BigInt  @id
+  orderID      BigInt?
+  shipmentName String?
+  addres       String?
+  date         String?
+}
+
+model shipmentstatus {
+  shipmentstatusID BigInt  @id
+  shipmentID       BigInt?
+  status           String?
+}
+
+model store {
+  storeID     BigInt  @id
+  storeName   String?
+  storeEmail  String?
+  storeAddres String?
+  storeDesc   String?
+}
+
+model storeDetails {
+  storeDetailsID BigInt  @id
+  storeID        BigInt?
+  productType    String?
+  storePhone     String?
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model user {
+  userID     BigInt  @id
+  useremail  String?
+  firstName  String?
+  lastName   String?
+  shipName   String?
+  shipAddres String?
+  city       String?
+  tax        BigInt?
+  phone      String?
+}
