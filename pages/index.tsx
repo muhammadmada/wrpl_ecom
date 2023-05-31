@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Card_Product from '@/components/Card_Product'
+import Card_Product from '@/components/CardProduct'
 import home from '@/styles/Home.module.css'
 
 const index = () => {

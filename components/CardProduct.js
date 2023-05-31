@@ -17,9 +17,9 @@
 
 // export default Card_Product;
 
-import CardStyles from '../styles/Card_Product.module.css';
+import CardStyles from '../styles/CardProduct.module.css';
 
-const Card_Cart = () => {
+const CardProduct = () => {
   return (
     <div className={CardStyles.card}>
       <img className={CardStyles.image} src="../WhatsApp Image 2023-05-27 at 11.15.28.jpeg" alt="Product" />
@@ -34,4 +34,4 @@ const Card_Cart = () => {
   );
 }
 
-export default Card_Cart;
+export default CardProduct;
