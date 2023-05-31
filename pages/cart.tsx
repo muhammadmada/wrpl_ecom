@@ -1,15 +1,15 @@
 import CartStyle from '../styles/Cart.module.css'
-import Card from '../components/Card_Cart'
+import Card_Cart from '../components/Card_Cart'
 
 const Cart = () => {
     return (
         <>
             <li>
                 <ul>
-                    <Card />
+                    <Card_Cart />
                 </ul>
                 <ul>
-                    <Card />
+                    <Card_Cart />
                 </ul>
             </li>
         </>
