@@ -1,20 +1,33 @@
-.foot{
+.foot {
     background-color: #000;
     color: #fff;
     padding: 20px;
-    text-align: center;
     min-height: 12.5vh;
-}
-
-.content{
+  }
+  
+  .columns {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.content p{
-    margin: 1.5rem;
-    text-align: justify;
-    font-size: large;
-}
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  .content h3 {
+    margin: 20px 0 10px 0;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .content li {
+    margin-bottom: 0.5rem;
+  }
+  
