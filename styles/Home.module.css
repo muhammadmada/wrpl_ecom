@@ -34,3 +34,25 @@
     top: 20px;
     margin: 10%;
 }
+
+.list_outside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    outline-color: #000;
+}
+
+.list_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: inherit;
+    width: 100%;
+    height: 20%;
+    outline-color: #000;
+}

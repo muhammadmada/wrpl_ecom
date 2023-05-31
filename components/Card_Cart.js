@@ -1,6 +1,6 @@
 import CardStyles from '../styles/Card.module.css';
 
-const Card = () => {
+const Card_Cart = () => {
     return (
         <div className={CardStyles.container}>
             <div className={CardStyles.upper}>
@@ -13,4 +13,4 @@ const Card = () => {
     );
 }
 
-export default Card;
+export default Card_Cart;

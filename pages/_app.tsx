@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { JetBrains_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-const mainFont = JetBrains_Mono({subsets: ['latin']})
+const mainFont = Inter({subsets: ['latin']})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

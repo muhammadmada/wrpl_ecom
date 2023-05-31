@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Card_Product from '@/components/Card_Product'
 import home from '@/styles/Home.module.css'
 
 const index = () => {
@@ -8,8 +9,32 @@ const index = () => {
         </Head>
         <div className={home.container}>
             <div className={home.head}>
-                <h1>under construction</h1>
-                <p>come back here soon</p>
+                <h1>Products</h1>
+            </div>
+            <div>
+                <ul className={home.list_outside}>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                    <li className={home.list_inside}>
+                        <Card_Product />
+                    </li>
+                </ul>
             </div>
         </div>
         </>
