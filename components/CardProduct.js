@@ -1,27 +1,16 @@
-// import Card_ProductStyle from '../styles/Card_Product.module.css';
-
-// const Card_Product = () => {
-//     return (
-//         <div className={Card_ProductStyle.container}>
-//             <div className={Card_ProductStyle.upper}>
-//                 <h1>Image</h1>
-//             </div>
-//             <div className={Card_ProductStyle.lower}>
-//                 <h1>content</h1>
-//             </div>
-//             <div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default Card_Product;
-
+import React from 'react';
+import { useRouter } from 'next/router';
 import CardStyles from '../styles/CardProduct.module.css';
 
-const CardProduct = () => {
+const CardProduct = ({ productId }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/product/${productId}`);
+  };
+
   return (
-    <div className={CardStyles.card}>
+    <div className={CardStyles.card} onClick={handleClick}>
       <img className={CardStyles.image} src="../WhatsApp Image 2023-05-27 at 11.15.28.jpeg" alt="Product" />
       <h3 className={CardStyles.name}>Product Name</h3>
       <p className={CardStyles.price}>$99.99</p>
@@ -32,6 +21,6 @@ const CardProduct = () => {
       </div>
     </div>
   );
-}
+};
 
 export default CardProduct;
